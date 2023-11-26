@@ -43,9 +43,6 @@ class Hangman:
   def ask_letter(self, prompt: str = "Guess a letter: "):
     return input(prompt)
   
-  def interpolate(self, start, end, t):
-    return start + t * (end - start)
-  
   def map(self, input_min: int, input_max: int, output_min: int, output_max: int, value: int):
     return int((value - input_min) * (output_max - output_min) / (input_max - input_min) + output_min)
 
